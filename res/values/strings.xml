@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, ramdan!</string>
+    <string name="app_name">Ramadan 2014</string>
+    <string name="Asar_Angle_Prompt">Asar Angle</string>
+    <string name="Cal_Method_Prompt">Calculation Method</string>
+
+    <color name="White">#FFFFFF</color>
+    <color name="Black">#000000</color>
+    <color name="Red">#FF0000</color>
+    <color name="Blue">#0099CC</color>
+    <color name="Bluee">#0066FF</color>
+    <color name="Green">#00FF00</color>
+    <color name="TBlack">#80000000</color>
+    <color name="TWhite">#80FFFFFF</color>
+
+    <string name="time_zone_prompt">Time Zone</string>
+
+    <string-array name="Asar_Angle_Array">
+        <item>Shafii</item>
+        <item>Hanafi</item>
+    </string-array>
+    <string-array name="Cal_Method_Array">
+        <item>Ithna Ashari</item>
+        <item>University of Islamic Sciences, Karachi</item>
+        <item>Islamic Society of North America (ISNA)</item>
+        <item>Muslim World League (MWL)</item>
+        <item>Umm al-Qura, Makkah</item>
+        <item>Egyptian General Authority of Survey</item>
+        <item>Institute of Geophysics, University of Tehran</item>
+    </string-array>
+    <string-array name="Time_Zone_Array">
+        <item>GMT -12:00</item>
+        <item>GMT -11:00</item>
+        <item>GMT -10:00</item>
+        <item>GMT -9:00</item>
+        <item>GMT -8:00</item>
+        <item>GMT -7:00</item>
+        <item>GMT -6:00</item>
+        <item>GMT -5:00</item>
+        <item>GMT -4:30</item>
+        <item>GMT -4:00</item>
+        <item>GMT -3:30</item>
+        <item>GMT -3:00</item>
+        <item>GMT -2:00</item>
+        <item>GMT -1:00</item>
+        <item>GMT 0:00</item>
+        <item>GMT 1:00</item>
+        <item>GMT 2:00</item>
+        <item>GMT 3:00</item>
+        <item>GMT 3:30</item>
+        <item>GMT 4:00</item>
+        <item>GMT 4:30</item>
+        <item>GMT 5:00</item>
+        <item>GMT 5:30</item>
+        <item>GMT 6:00</item>
+        <item>GMT 7:00</item>
+        <item>GMT 8:00</item>
+        <item>GMT 9:00</item>
+        <item>GMT 9:30</item>
+        <item>GMT 10:00</item>
+        <item>GMT 11:00</item>
+        <item>GMT 12:00</item>
+    </string-array>
+    <string-array name="alarm_offset_array">
+        <item>None</item>
+        <item>0 min</item>
+        <item>-5 min</item>
+        <item>-10 min</item>
+        <item>-15 min</item>
+        <item>-30 min</item>
+        <item>-45 min</item>
+        <item>-60 min</item>
+    </string-array>
+
+</resources>

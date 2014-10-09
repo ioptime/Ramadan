@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:padding="0dip" >
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#80000000"
+        android:orientation="vertical"
+        android:padding="0dip" >
+
+        <TextView
+            android:id="@+id/settings_text"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:gravity="center"
+            android:text="Settings"
+            android:textColor="@color/White"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/doneview"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:gravity="center_vertical"
+            android:onClick="done"
+            android:src="@drawable/save_button" />
+
+        <TextView
+            android:id="@+id/save_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/doneview"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="25dip"
+            android:text="Save"
+            android:textColor="@color/White"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/r1"
+        android:background="@android:color/transparent" >
+
+        <ScrollView
+            android:id="@+id/ScrollView01"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent"
+            android:padding="10dip"
+            android:scrollbars="none" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@android:color/transparent" >
+
+                <TextView
+                    android:id="@+id/back_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:text="Time Settings"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/back_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="230dip"
+                    android:layout_marginTop="35dip"
+                    android:background="@drawable/back_text"
+                    android:text=""
+                    android:textColor="@color/Black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/asar_angle_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="55dip"
+                    android:text="Asar Angle"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/asar_angle_textd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="55dip"
+                    android:layout_toRightOf="@+id/time_zone_text"
+                    android:text=""
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/asar_angle_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dip"
+                    android:background="@drawable/next_message_buttonb" />
+
+                <Spinner
+                    android:id="@+id/asar_angle_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/asar_angle_text"
+                    android:layout_marginTop="10dip"
+                    android:prompt="@string/Asar_Angle_Prompt"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/cal_method_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/asar_angle_spinner"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="35dip"
+                    android:text="Calculation Method"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cal_method_textd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/asar_angle_spinner"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="35dip"
+                    android:layout_toRightOf="@+id/cal_method_text"
+                    android:text=""
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/cal_method_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/asar_angle_spinner"
+                    android:layout_marginTop="0dip"
+                    android:background="@drawable/next_message_buttonb" />
+
+                <Spinner
+                    android:id="@+id/cal_method_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cal_method_text"
+                    android:layout_marginTop="10dip"
+                    android:prompt="@string/Cal_Method_Prompt"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/time_zone_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cal_method_spinner"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="35dip"
+                    android:text="Time Zone"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/time_zone_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/time_zone_text"
+                    android:layout_marginTop="10dip"
+                    android:prompt="@string/time_zone_prompt"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/time_zone_textd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/time_zone_spinner"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="-20dip"
+                    android:layout_toRightOf="@+id/time_zone_text"
+                    android:text=""
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/time_zone_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/cal_method_spinner"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/next_message_buttonb" />
+
+                <TextView
+                    android:id="@+id/time_formate_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/time_zone_spinner"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="35dip"
+                    android:text="Use 24-hour format"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/time_formate_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/time_zone_spinner"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="15dip" />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>
